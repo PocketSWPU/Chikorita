@@ -24,4 +24,10 @@ public class TestController {
     public String test2(){
         return testMapperInt.testSql();
     }
+
+    @GetMapping("/t3")
+    @ResponseBody
+    public String test3(){
+        return "crazy";
+    }
 }
