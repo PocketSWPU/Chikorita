@@ -1,0 +1,13 @@
+server:
+    port: 9999
+
+spring:
+    datasource:
+        username: root
+        password: pzf299793
+        url: jdbc:mysql://106.55.99.49:3306/Chikoritat?useUnicode=true&characterEncoding=utf8
+        driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+    type-aliases-package: com.pocket.chikorita.domain
+    mapper-locations: classpath:mapper/*.xml
