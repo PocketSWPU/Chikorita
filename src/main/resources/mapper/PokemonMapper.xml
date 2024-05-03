@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pocket.chikorita.mapper.PokemonMapper">
+
+    <insert id="insertPokemon" parameterType="com.pocket.chikorita.domain.po.PokemonDO">
+        INSERT INTO pokemon (dex_id, pokemon_name, sub_dex_id, has_evolution, has_pre_evolution, pre_dex_id,
+                             next_dex_id, region_id)
+        VALUES ( #{dexId}, #{pokemonName}, #{subDexId}, #{hasEvolution}, #{hasPreEvolution}, #{preDexId}, #{nextDexId}
+               , #{regionId});
+    </insert>
+
+</mapper>
